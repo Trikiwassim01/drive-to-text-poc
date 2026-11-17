@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drive-to-Text</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Drive-to-Text</h1>
+      <p class="lead">Paste a public Google Drive folder link, pick PDFs and images, get their text.</p>
+    </header>
+
+    <div id="error" class="banner error" role="alert" hidden></div>
+
+    <section aria-labelledby="step-link">
+      <h2 id="step-link"><span class="num">1</span> Drive folder</h2>
+      <form id="link-form" class="row">
+        <label class="sr-only" for="folder-url">Public Google Drive folder URL</label>
+        <input id="folder-url" type="url" required autocomplete="off"
+               placeholder="https://drive.google.com/drive/folders/…">
+        <button id="list-btn" type="submit">List files</button>
+      </form>
+    </section>
+
+    <section id="files-section" aria-labelledby="step-files" hidden>
+      <h2 id="step-files"><span class="num">2</span> Files</h2>
+      <p id="empty-msg" class="muted" hidden>No PDFs or images (PNG, JPG, JPEG) in this folder.</p>
+
+      <div id="files-controls" class="toolbar">
+        <label class="check"><input id="select-all" type="checkbox"> Select all</label>
+        <span id="selection-count" class="muted" aria-live="polite">0 selected</span>
+        <fieldset id="languages" class="langs">
+          <legend>OCR language</legend>
+        </fieldset>
+        <button id="run-btn" type="button" disabled>Extract text</button>
+      </div>
+
+      <div class="table-wrap">
+        <table id="files-table">
+          <thead>
+            <tr><th class="narrow"><span class="sr-only">Select</span></th>
+                <th>Name</th><th>Type</th><th class="num-col">Size</th><th>Status</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="progress" hidden>
+        <progress id="progress-bar" max="1" value="0"></progress>
+        <span id="progress-label" class="muted" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <section id="results-section" aria-labelledby="step-results" hidden>
+      <div class="toolbar">
+        <h2 id="step-results"><span class="num">3</span> Results</h2>
+        <a id="export-btn" class="button" href="#" aria-disabled="true">Export JSON</a>
+      </div>
+      <div id="results"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
