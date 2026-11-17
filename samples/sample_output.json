@@ -1,0 +1,81 @@
+{
+  "id": "7342ed7c4d124dad9c752abefdcca943",
+  "folder_id": "LOCAL_FIXTURE_FOLDER",
+  "languages": [
+    "eng"
+  ],
+  "status": "completed",
+  "created_at": "2026-11-17T21:13:33+00:00",
+  "files": [
+    {
+      "id": "broken.pdf",
+      "name": "broken.pdf",
+      "mime_type": "application/pdf",
+      "kind": "pdf",
+      "size": 17,
+      "status": "failed",
+      "method": null,
+      "pages": null,
+      "text": null,
+      "warnings": [],
+      "error": "The file is not a valid PDF.",
+      "duration_ms": 6
+    },
+    {
+      "id": "contract-scan.pdf",
+      "name": "contract-scan.pdf",
+      "mime_type": "application/pdf",
+      "kind": "pdf",
+      "size": 22050,
+      "status": "done",
+      "method": "ocr",
+      "pages": 1,
+      "text": "SCANNED CONTRACT 2026",
+      "warnings": [],
+      "error": null,
+      "duration_ms": 247
+    },
+    {
+      "id": "invoice-native.pdf",
+      "name": "invoice-native.pdf",
+      "mime_type": "application/pdf",
+      "kind": "pdf",
+      "size": 609,
+      "status": "done",
+      "method": "pdf_parser",
+      "pages": 1,
+      "text": "Invoice 2026-0042 Total 120.00 EUR",
+      "warnings": [],
+      "error": null,
+      "duration_ms": 3
+    },
+    {
+      "id": "photo.jpg",
+      "name": "photo.jpg",
+      "mime_type": "image/jpeg",
+      "kind": "image",
+      "size": 8787,
+      "status": "done",
+      "method": "ocr",
+      "pages": null,
+      "text": "HELLO DRIVE",
+      "warnings": [],
+      "error": null,
+      "duration_ms": 158
+    },
+    {
+      "id": "receipt.png",
+      "name": "receipt.png",
+      "mime_type": "image/png",
+      "kind": "image",
+      "size": 7593,
+      "status": "done",
+      "method": "ocr",
+      "pages": null,
+      "text": "RECEIPT 2026",
+      "warnings": [],
+      "error": null,
+      "duration_ms": 123
+    }
+  ]
+}
