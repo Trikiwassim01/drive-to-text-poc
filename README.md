@@ -51,21 +51,6 @@ uvicorn app.main:app --reload
 
 Open <http://localhost:8000>. Run the tests with `pytest`.
 
-### Google API key (recommended, optional)
-
-Public folders can be read **without any user login**, but Google only offers a
-proper listing endpoint with an API key (a key, not OAuth):
-
-1. Google Cloud Console → create a project → enable **Google Drive API**.
-2. Credentials → create an **API key**, restrict it to the Drive API.
-3. Put it in `.env` as `GOOGLE_API_KEY=...` (the file is git-ignored).
-
-| | With key | Without key (fallback) |
-|---|---|---|
-| Source | Drive API v3 | Public embedded folder view (HTML) |
-| File sizes | Exact | Unknown (shown as "—") |
-| Reliability | Supported API | Best effort: Google can change the markup |
-| Over-size check | Before download | While downloading |
 
 ## Architecture
 
