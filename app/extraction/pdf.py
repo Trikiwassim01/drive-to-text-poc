@@ -1,4 +1,3 @@
-"""Text extraction from PDFs: native text layer first, OCR for pages without one."""
 
 import io
 from collections.abc import Callable

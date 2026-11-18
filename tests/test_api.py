@@ -1,4 +1,3 @@
-"""End-to-end through the HTTP API with a fake Google Drive and a fake OCR engine."""
 
 import time
 

@@ -1,4 +1,3 @@
-"""Fixtures built in code so the repo carries no binary test files."""
 
 import io
 

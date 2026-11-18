@@ -1,4 +1,3 @@
-"""OCR through Tesseract (Apache-2.0), driven by pytesseract."""
 
 import io
 from functools import lru_cache

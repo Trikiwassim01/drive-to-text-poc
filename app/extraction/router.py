@@ -1,4 +1,3 @@
-"""Routing: native PDFs go to the PDF parser, images go to OCR."""
 
 from app.config import Settings
 from app.drive.models import FileKind

@@ -1,4 +1,3 @@
-"""Drive file model and file-type classification."""
 
 from pathlib import PurePosixPath
 from typing import Literal

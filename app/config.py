@@ -1,4 +1,3 @@
-"""Application settings, loaded from environment variables / a local .env file."""
 
 from functools import lru_cache
 

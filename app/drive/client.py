@@ -1,10 +1,3 @@
-"""Read-only access to *public* Google Drive folders. No OAuth involved.
-
-Two listing strategies:
-  * Drive API v3 with an API key (GOOGLE_API_KEY): exact names, types, sizes.
-  * Keyless fallback: parse Google's public embedded folder view. Best effort:
-    sizes are unknown and Google may change the markup at any time.
-"""
 
 import logging
 from html.parser import HTMLParser

@@ -1,5 +1,4 @@
-"""In-memory batch jobs. Each file is processed independently so one failure
-never stops the others."""
+
 
 import asyncio
 import logging

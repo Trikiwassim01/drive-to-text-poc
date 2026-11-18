@@ -1,11 +1,4 @@
-"""Produce samples/sample_output.json from a *local fixture folder*.
 
-A fake Drive serves generated files; the real PDF parser and real Tesseract
-do the extraction. Use it when you have no Drive access. For the real thing,
-see "Sample output" in the README.
-
-    python -m scripts.generate_sample
-"""
 
 import asyncio
 import json

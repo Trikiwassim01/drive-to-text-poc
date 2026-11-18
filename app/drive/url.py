@@ -1,4 +1,3 @@
-"""Parsing of Google Drive folder links."""
 
 import re
 from urllib.parse import parse_qs, urlparse

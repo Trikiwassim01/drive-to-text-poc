@@ -1,4 +1,3 @@
-"""FastAPI application: JSON API plus the static single-page UI."""
 
 import logging
 from contextlib import asynccontextmanager
